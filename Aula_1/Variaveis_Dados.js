@@ -1,4 +1,4 @@
-const estaChovendo = true; // Boolean
+const esta_Chovendo = true; // Boolean
 const dadosAluno = null; // Null
 const idadeAluno = 1.23; // Number
 const nomeAluno = "jose"; // String
