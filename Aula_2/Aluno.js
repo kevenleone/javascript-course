@@ -13,8 +13,18 @@ class Aluno {
 
 const firstDayOfYear = new Date(2020, 0, 20);
 
-const aluno = new Aluno("Keven", "Leone", );
+const aluno = new Aluno("Keven", "Leone", new Date());
 const aluno2 = new Aluno("Eduardo", "Erik", new Date());
 
-aluno.getFullName()
-aluno2.getFullName()
+for (const alunoX of [aluno, aluno2]) {
+    // console.log(alunoX)
+    for (const key in alunoX) {
+        if (alunoX.hasOwnProperty(key)) {
+            const element = alunoX[key];
+            console.log({element})
+        }
+    }
+}
+
+// aluno.getFullName()
+// aluno2.getFullName()

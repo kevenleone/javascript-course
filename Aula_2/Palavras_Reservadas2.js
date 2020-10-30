@@ -1,11 +1,7 @@
-const age = 17;
+console.log(name)
+getName()
+console.log(name)
 
-try {
-    if (age <= 18) {
-        throw new Error("Menor de idade")
-    }
-} catch (error) {
-    console.log(error.message)
+function getName(){ 
+    var name = 'keven'
 }
-
-console.log("Fim do arquivo")
