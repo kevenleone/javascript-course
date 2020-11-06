@@ -11,7 +11,9 @@ const mainData = {
     name: "UFPE",
     num: 1,
     string: "keven",
-  },
+    abc: 123,
+    zzz: 1234
+  }
 };
 
 const student = {
@@ -26,7 +28,7 @@ const student2 = {
   school: "UPE",
 };
 
-const { city, colleges } = mainData; // Nova forma com Destructuring
+const { city, colleges, school } = mainData; // Nova forma com Destructuring
 const { name, ...collegesData } = colleges; // Destructuring e Spread
 
 const collegesData2 = {
@@ -74,4 +76,9 @@ const sum = (numberA, ...numbers) => {
     return finalNumber
 };
 
-// console.log(sum(10, 2, 3, 4, 5, 6))
+const nome = 'keven';
+const nomeMaiusculo = nome.toUpperCase();
+
+// nome = nome.toUpperCase() // "KEVEN"
+
+console.log(sum(10, 2, 3, 4, 5, 6))
